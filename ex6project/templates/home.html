@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            padding: 50px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 32px;
+            margin: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: background-color 0.3s ease;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1>Kamaraj College of Engineering and Technology</h1>
+    <h2>Web Application using Django Framework</h2>
+    <h3>Afrin Thayufa S III/IT</h3>
+    <h3>22UIT054</h3>
+    <button onclick="location.href='{% url "create" %}'">Create</button>
+    <button onclick="location.href='{% url "read" %}'">Read</button>
+    <button onclick="location.href='{% url "read" %}'">Update</button>
+    <button onclick="location.href='{% url "delete" %}'">Delete</button>
+</body>
+</html>
